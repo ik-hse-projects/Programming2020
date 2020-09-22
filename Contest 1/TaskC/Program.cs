@@ -4,6 +4,11 @@ class Program
 {
     static void Main(string[] args)
     {
-        // Write your code here
+       uint a;
+       Console.WriteLine(
+           uint.TryParse(Console.ReadLine(), out a)
+               ? (a % 10).ToString()
+               : "Incorrect input"
+       );
     }
 }

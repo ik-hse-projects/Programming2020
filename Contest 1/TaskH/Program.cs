@@ -4,6 +4,11 @@ class Program
 {
     static void Main(string[] args)
     {
-        // Write your code here
+        var s = Console.ReadLine();
+        Console.WriteLine(
+            s != null && s.Length == 1 && s[0] >= 'a' && s[0] <= 'z'
+            ? (s[0] - 'a' + 1).ToString()
+            : "Incorrect input"
+        );
     }
 }
