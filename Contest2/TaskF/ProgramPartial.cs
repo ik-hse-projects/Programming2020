@@ -1,16 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-partial class Program
+﻿partial class Program
 {
     static bool Validate(int n)
     {
-        // Write your code here.
+        return n >= 0;
     }
 
     static int DivisorsSum(int n)
     {
-        // Write your code here.
+        var result = 0;
+        for (var i = 1; i < n; i++)
+        {
+            if (n % i == 0)
+            {
+                result += i;
+            }
+        }
+        return result;
     }
 }
