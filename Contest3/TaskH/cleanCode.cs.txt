@@ -1,0 +1,7 @@
+Hellow
+
+This is not a comment: "//"
+
+Tis is too "/*"
+
+*/ <- not a end
