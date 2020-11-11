@@ -1,26 +1,27 @@
-﻿using System;
-using System.IO;
+﻿using System.IO;
+using System.Linq;
 
 internal class Matrix
 {
-    int[,] matrix;
+    private readonly int[][] matrix;
 
     public Matrix(string filename)
     {
-        throw new NotImplementedException();
+        matrix = File
+            .ReadLines(filename)
+            .Select(line => line
+                .Split(';')
+                .Select(int.Parse)
+                .ToArray())
+            .ToArray();
     }
 
-    public int SumOffEvenElements
-    {
-        get
-        {
-            throw new NotImplementedException();
-        }
-    }
+    public int SumOffEvenElements => matrix.SelectMany(x => x).Where(x => x % 2 == 0).Sum();
 
 
     public override string ToString()
     {
-        throw new NotImplementedException();
+        return string.Join("", matrix
+            .Select(row => string.Join("\t", row) + "\n"));
     }
 }

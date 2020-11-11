@@ -1,5 +1,5 @@
-using System;
 using System.Collections.Generic;
+using System.Linq;
 
 public class Support
 {
@@ -9,27 +9,33 @@ public class Support
 
     public int OpenTask(string text)
     {
-        throw new NotImplementedException();
+        var id = tasks.Count + 1;
+        tasks.Add(new Task(id, text));
+        return id;
     }
 
     public void CloseTask(int id, string answer)
     {
-        throw new NotImplementedException();
+        var task = tasks[id - 1];
+        task.Answer = answer;
+        task.IsResolved = true;
     }
 
     public List<Task> GetAllUnresolvedTasks()
     {
-        throw new NotImplementedException();
+        return tasks.Where(task => !task.IsResolved).ToList();
     }
 
     public void CloseAllUnresolvedTasksWithDefaultAnswer(string answer)
     {
-        throw new NotImplementedException();
-
+        foreach (var task in GetAllUnresolvedTasks())
+        {
+            CloseTask(task.Id, answer);
+        }
     }
 
     public string GetTaskInfo(int id)
     {
-        throw new NotImplementedException();
+        return tasks[id - 1].ToString();
     }
 }
