@@ -1,35 +1,21 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 class Soldier
-{   
-    public string Attack()
-    {
-        throw new NotImplementedException();
-    }
+{
+    public virtual string Attack() => "Shoot from gun";
 }
 
 class CoolerSoldier : Soldier
 {
-    public string Attack()
-    {
-        throw new NotImplementedException();
-    }
+    public override string Attack() => "Shoot from gun and throw a grenade";
 }
 
 class ManInBlack : Soldier
 {
-    public string Attack()
-    {
-        throw new NotImplementedException();
-    }
+    public new virtual string Attack() => "Shoot from blaster";
 }
 
 class ManInBlackBoss : ManInBlack
 {
-    public string Attack()
-    {
-        throw new NotImplementedException();
-    }
+    public override string Attack() => "Shoot from blaster and call an army of aliens";
 }

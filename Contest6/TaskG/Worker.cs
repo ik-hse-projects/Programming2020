@@ -1,15 +1,15 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 public class Worker
 {
-
+    private Apple[] _apples;
+    
     public Worker(Apple[] apples)
     {
-        throw new NotImplementedException();
+        _apples = apples;
     }
 
-    public Apple[] GetSortedApples()
-    {
-        throw new NotImplementedException();
-    }
+    public IEnumerable<Apple> GetSortedApples() => _apples.OrderBy(apple => apple.Weight);
 }
