@@ -1,17 +1,34 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 internal class MyGiveawayHelper
 {
+    private int number;
+    private List<string> logins;
+    private List<string> prizes;
 
     public MyGiveawayHelper(string[] logins, string[] prizes)
     {
-        throw new NotImplementedException();
+        number = 1579;
+        this.logins = logins.ToList();
+        this.prizes = prizes.ToList();
     }
 
-    public bool HasPrizes => throw new NotImplementedException();
+    public bool HasPrizes => prizes.Count != 0;
 
     public (string prize,string login) GetPrizeLogin()
     {
-        throw new NotImplementedException();
+        number *= number;
+        number /= 100;
+        number %= 10000;
+
+        var idx = number % logins.Count;
+        var login = logins[idx];
+
+        var prize = prizes[0];
+        prizes.RemoveAt(0);
+
+        return (prize, login);
     }
-}   
+}

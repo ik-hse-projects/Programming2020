@@ -31,9 +31,9 @@ public class Program
         }
         else
         {
-            Console.WriteLine(!boat.IsAtThePort
-                ? $"Brigantine. {((Boat) brigantine).CountCost(weight)}$"
-                : $"Boat. {boat.CountCost(weight)}$");
+            Console.WriteLine(boat.IsAtThePort
+                ? $"Boat. {boat.CountCost(weight)}$"
+                : $"Brigantine. {((Boat) brigantine).CountCost(weight)}$");
         }
     }
 }

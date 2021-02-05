@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ContentModelStore">
     <e p="$USER_HOME$/.cache/JetBrains/Rider2020.2/extResources" t="IncludeRecursive" />
-    <e p="$USER_HOME$/.cache/JetBrains/Rider2020.2/resharper-host/local/Transient/Rider/v202/SolutionCaches/_Contest7.-147635824.00" t="ExcludeRecursive" />
+    <e p="$USER_HOME$/.cache/JetBrains/Rider2020.2/resharper-host/local/Transient/Rider/v202/SolutionCaches/_Contest6.356999280.00" t="ExcludeRecursive" />
     <e p="$PROJECT_DIR$" t="IncludeFlat">
-      <e p="Contest7.sln" t="IncludeFlat" />
+      <e p="Contest6.sln" t="IncludeFlat" />
       <e p="TaskA" t="IncludeRecursive">
-        <e p="MyGiveawayHelper.cs" t="Include" />
         <e p="Program.cs" t="Include" />
         <e p="TaskA.csproj" t="IncludeRecursive" />
+        <e p="TemperatureCalculator.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -19,7 +19,7 @@
         </e>
       </e>
       <e p="TaskB" t="IncludeRecursive">
-        <e p="ArchaeologicalFind.cs" t="Include" />
+        <e p="IntWrapper.cs" t="Include" />
         <e p="Program.cs" t="Include" />
         <e p="TaskB.csproj" t="IncludeRecursive" />
         <e p="bin" t="ExcludeRecursive" />
@@ -32,9 +32,9 @@
         </e>
       </e>
       <e p="TaskC" t="IncludeRecursive">
-        <e p="Point.cs" t="Include" />
-        <e p="Program.GetPoints.cs" t="Include" />
+        <e p="Polygon.cs" t="Include" />
         <e p="Program.cs" t="Include" />
+        <e p="RegularPolygon.cs" t="Include" />
         <e p="TaskC.csproj" t="IncludeRecursive" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
@@ -46,8 +46,7 @@
         </e>
       </e>
       <e p="TaskD" t="IncludeRecursive">
-        <e p="Boat.cs" t="Include" />
-        <e p="Brigantine.cs" t="Include" />
+        <e p="Army.cs" t="Include" />
         <e p="Program.cs" t="Include" />
         <e p="TaskD.csproj" t="IncludeRecursive" />
         <e p="bin" t="ExcludeRecursive" />
@@ -60,11 +59,12 @@
         </e>
       </e>
       <e p="TaskE" t="IncludeRecursive">
-        <e p="Corrector.cs" t="Include" />
-        <e p="Editor.cs" t="Include" />
-        <e p="Linguist.cs" t="Include" />
+        <e p="Knight.cs" t="Include" />
+        <e p="LegendaryHuman.cs" t="Include" />
         <e p="Program.cs" t="Include" />
         <e p="TaskE.csproj" t="IncludeRecursive" />
+        <e p="TaskE.zip" t="Include" />
+        <e p="Wizard.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -75,10 +75,12 @@
         </e>
       </e>
       <e p="TaskF" t="IncludeRecursive">
-        <e p="Group.cs" t="Include" />
+        <e p="Grassland.cs" t="Include" />
+        <e p="Program.Parser.cs" t="Include" />
         <e p="Program.cs" t="Include" />
-        <e p="Student.cs" t="Include" />
+        <e p="Sheep.cs" t="Include" />
         <e p="TaskF.csproj" t="IncludeRecursive" />
+        <e p="TaskF.zip" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -89,12 +91,11 @@
         </e>
       </e>
       <e p="TaskG" t="IncludeRecursive">
+        <e p="Apple.cs" t="Include" />
         <e p="Program.cs" t="Include" />
         <e p="TaskG.csproj" t="IncludeRecursive" />
         <e p="TaskG.zip" t="Include" />
-        <e p="TestSystem.cs" t="Include" />
-        <e p="TestSystemPartial.cs" t="Include" />
-        <e p="User.cs" t="Include" />
+        <e p="Worker.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -105,9 +106,13 @@
         </e>
       </e>
       <e p="TaskH" t="IncludeRecursive">
+        <e p="Exponent.cs" t="Include" />
+        <e p="Function.cs" t="Include" />
+        <e p="Parabola.cs" t="Include" />
         <e p="Program.cs" t="Include" />
-        <e p="Snowflake.cs" t="Include" />
+        <e p="Sin.cs" t="Include" />
         <e p="TaskH.csproj" t="IncludeRecursive" />
+        <e p="TaskH.zip" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -118,8 +123,8 @@
         </e>
       </e>
       <e p="TaskI" t="IncludeRecursive">
+        <e p="Gifts.cs" t="Include" />
         <e p="Program.cs" t="Include" />
-        <e p="RegularExpression.cs" t="Include" />
         <e p="TaskI.csproj" t="IncludeRecursive" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
@@ -131,8 +136,10 @@
         </e>
       </e>
       <e p="TaskJ" t="IncludeRecursive">
+        <e p="File.cs" t="Include" />
+        <e p="Folder.Backup.cs" t="Include" />
+        <e p="Folder.cs" t="Include" />
         <e p="Program.cs" t="Include" />
-        <e p="RandomProxy.cs" t="Include" />
         <e p="TaskJ.csproj" t="IncludeRecursive" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">

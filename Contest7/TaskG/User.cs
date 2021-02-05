@@ -3,18 +3,35 @@ using System.Collections.Generic;
 
 public class User
 {
-   
-
+    private string username;
+    private List<string> notifications = new List<string>();
+    
     public User(string username)
     {
-        throw new NotImplementedException();
+        this.username = username;
     }
 
-    public override string ToString() => throw new NotImplementedException();
+    public bool Subscribed { get; set; }
 
     public void SendMessage(string text)
     {
-        throw new NotImplementedException();
+        if (!Subscribed)
+        {
+            return;
+        }
+        
+        Console.WriteLine($"-{username}-");
+
+        if (notifications.Count != 0)
+        {
+            Console.WriteLine("Received notifications:");
+            foreach (var notification in notifications)
+            {
+                Console.WriteLine(notification);
+            }
+        }
+        
+        Console.WriteLine($"New notification: {text}");
+        notifications.Add(text);
     }
-    
 }
